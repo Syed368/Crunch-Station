@@ -85,6 +85,35 @@ cursor:pointer;
     text-decoration:none;
     border-bottom:1px solid #333;
 }
+
+section{
+    padding:100px 20px;
+}
+
+#about{
+    background:#222;
+    color:white;
+}
+
+#whatsapp{
+    background:#111;
+    color:white;
+    text-align:center;
+}
+
+.whatsapp-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+
+    background:#25D366;
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+}
+
 #menuBtn{
 font-size:24px;
 display:none;
@@ -364,6 +393,33 @@ display:flex;
 flex-direction:column;
 gap:15px;
 }
+#contact{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.whatsapp-link{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+
+    background:#25D366;
+    color:white;
+
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+
+    border-radius:8px;
+
+    transition:0.3s;
+}
+
+.whatsapp-link:hover{
+    background:#1ebe5d;
+    transform:scale(1.05);
+}
+
 
 form input,
 form textarea{
@@ -518,3 +574,65 @@ font-size:38px;
 font-size:18px;
 }
 }
+
+#team{
+    padding:20px 10%;
+    background:#222121;
+    text-align:center;
+}
+
+#team h2{
+    color:#cc811f;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.team-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.team-card{
+    width:280px;
+    background:#222;
+    border-radius:15px;
+    padding:20px;
+    transition:0.4s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.team-card:hover{
+    transform:translateY(-10px);
+}
+
+.team-card img{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #ff9800;
+}
+
+.team-card h3{
+    color:white;
+    margin-top:15px;
+}
+
+.team-card p{
+    color:#ccc;
+    margin:10px 0;
+}
+
+@media(max-width:768px){
+
+.team-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+}
+
+
+
