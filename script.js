@@ -301,6 +301,13 @@ contactForm.addEventListener(
     }
 );
 
+function showMessage(){
+
+    alert(
+    "Thank you for visiting Crunch Station! We are committed to providing delicious food and excellent service."
+    );
+
+}
 
 // =========================
 // WHATSAPP ORDER
