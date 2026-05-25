@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crunch Station Restaurant</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<header>
+
+<div class="logo">
+🍔 Crunch Station
+</div>
+
+<nav id="nav">
+
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<div class="nav-icons">
+
+<button id="themeBtn">
+🌙
+</button>
+
+<button id="loginBtn">
+Login
+</button>
+
+<button id="Call Us">
+Call Us
+</button>
+
+<button id="OrderNOW">
+Order Now
+</button>
+
+<i class="fas fa-bars" id="menuBtn"></i>
+
+</div>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero" id="home">
+
+<div class="slide active">
+<h1>Best Burgers In Town</h1>
+<p>Fresh & Delicious Fast Food</p>
+<button onclick="scrollMenu()">
+Order Now
+</button>
+</div>
+
+<div class="slide">
+<h1>Fresh Food Deals</h1>
+<p>Cheesy And Crispy shawarma</p>
+<button onclick="scrollMenu()">
+Explore Menu
+</button>
+</div>
+
+<div class="slide">
+<h1>Zinger Shawarma</h1>
+<p>Prepared Daily For You</p>
+<button onclick="scrollMenu()">
+View Menu
+</button>
+</div>
+
+</section>
+
+<!-- Menu -->
+
+<section id="menu">
+
+<h2>
+Our Menu
+</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+<h3>Zinger Burger</h3>
+<p>500</p>
+
+<button onclick="orderNow('Zinger Burger',5)">
+Order Now
+</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROqNvAM_Tjo-bKjs33hCDIAUhdFd1OlSb5lA&s">
+<h3>Shami Burger</h3>
+<p>120</p>
+
+<button onclick="OrderNow('Shami Burger',8)">
+Order Now
+</button>
+</div>
+
+
+<div class="card">
+<img src="https://copykat.com/wp-content/uploads/2023/11/BK-Royal-Crispy-Chicken-Sandwich-Pin-2-1200x1200.jpg">
+<h3>Royal Crunch Burger</h3>
+<p>500</p>
+
+<button onclick="OrderNOW('Royal Crunch Burger',4)">
+Order Now
+</button>
+</div>
+
+<div class="card">
+<img src="https://chefcookingresort.com/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-20-at-5.36.00-AM.jpeg">
+<h3>Egg Shami Burger</h3>
+<p>150</p>
+
+<button onclick="OrderNOW('Egg Shami Burger',4)">
+Order Now
+</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGpK0Mwhbtknlq4ItTddwYVulDmyidpxDPXA&s">
+<h3>Double Decker Burger</h3>
+<p>499</p>
+
+<button onclick="OrderNOW(' Double Decker Burger',4)">
+Order Now
+</button>
+</div>
+
+<div class="card">
+<img src="https://www.thecookingcollective.com.au/wp-content/uploads/2025/03/chicken-burgers-5-of-14-500x500.jpg">
+<h3>Chicken Burger</h3>
+<p>200</p>
+
+<button onclick="OrderNOW('Chicken Burger ',4)">
+Order Now
+</button>
+</div>
+<br>
+
+
+<div class="card">
+<img src="https://drumstix.com.ng/wp-content/uploads/2017/09/shawarma-n.jpg">
+<h3>Small Shawarma</h3>
+<p>120</p>
+
+<br>
+<button onclick="OrderNOW(' Small Shawarma',4)">
+Order Now
+</button>
+</div>
+
+
+<div class="card">
+<img src="https://img.freepik.com/premium-photo/closeup-large-shawarma-with-meat-vegetables-sauce-dark-background-selective-focus_207126-8136.jpg">
+<h3>Large Shawarma</h3>
+<p>199</p>
+
+<button onclick="OrderNOW('Large Shawarma ',4)">
+Order Now
+</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0rBBTX6VO0ZdSqS1I931UpEBQVW63N0_wEA&s">
+<h3>Zinger Shawarma</h3>
+<p>250</p>
+
+<button onclick="OrderNOW('Zinger Shawarma ',4)">
+Order Now
+</button>
+</div>
+
+<div class="card">
+<img src="https://www.shutterstock.com/shutterstock/photos/2307518719/display_1500/stock-photo-chicken-shawarma-with-full-loaded-of-chicken-2307518719.jpg">
+<h3>Loaded Shawarma</h3>
+<p>299</p>
+
+<button onclick="OrderNOW('Loaded Shawarma ',4)">
+Order Now
+</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWSKR13VbAbXNBakcr1hmDRLY9KUTU4gNSuw&s">
+<h3>Afghani Roll</h3>
+<p>400</p>
+
+<button onclick="OrderNOW('Afghani Roll ',4)">
+Order Now
+</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVTN41qstsw8hl_wCgy_ZTNpbd3Le8gHUgbQ&s">
+<h3>Crunch Loaded Roll</h3>
+<p>399</p>
+
+<button onclick="OrderNOW('Crunch Loaded Roll ',4)">
+Order Now
+</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUdoInGTALuGRFaKauXCwHOkfgfqSgjMj5XA&s">
+<h3>Shawarma Platter</h3>
+<p>300</p>
+
+<button onclick="OrderNOW( 'Shawarma Platter ',4)">
+Order Now
+</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- Cart -->
+
+<section id="cart">
+
+<h2>
+Order Now!
+</h2>
+
+<ul id="cartItems"></ul>
+
+<h3>
+Total: $
+<span id="total">
+0
+</span>
+</h3>
+
+<button class="checkout"
+onclick="checkout()">
+Place Order
+</button>
+
+</section>
+
+<!-- Gallery -->
+
+<section id="gallery">
+
+<h2>
+Food Gallery
+</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+
+<img src="https://www.preciouscore.com/wp-content/uploads/2024/03/Loaded-French-Fries.jpg">
+
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+
+<img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add">
+
+</div>
+
+</section>
+
+<!-- Reviews -->
+
+<section id="reviews">
+
+<h2>
+Customer Reviews
+</h2>
+
+<div class="review-slider">
+
+<div class="review active-review">
+⭐⭐⭐⭐⭐
+
+<p>
+Amazing burgers and fast service.
+</p>
+
+<h4>
+Ali Khan
+</h4>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+
+<p>
+Best Burgers in the city.
+</p>
+
+<h4>
+Sara Ahmed
+</h4>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+
+<p>
+Excellent taste and quality.
+</p>
+
+<h4>
+Hamza
+</h4>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<h2>
+Contact Us
+</h2>
+
+<form>
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="number"
+placeholder="Quantity"
+required>
+
+<textarea
+placeholder="Your Message">
+</textarea>
+
+<button>
+Send Message
+</button>
+
+</form>
+
+</section>
+
+<!-- Login Modal -->
+
+<div class="modal" id="loginModal">
+
+<div class="modal-content">
+
+<span id="closeModal">
+×
+</span>
+
+<h2>
+Login
+</h2>
+
+<input
+type="text"
+placeholder="Username">
+
+<input
+type="password"
+placeholder="Password">
+
+<button>
+Login
+</button>
+
+</div>
+
+</div>
+
+<!-- phone -->
+
+<a
+href="tel:+923353104209" class="call-btn">
+
+<i class="fas fa-phone"></i>
+
+</a>
+
+<footer>
+<div class="info-item">
+    <span class="icon">📞</span>
+    <span>Contact:  +0335-3104209</p>
+</div>
+<br>
+<div class="info-item">
+    <span class="icon">📍</span> 
+    <span>Location: Jamalwal Road</span> 
+    
+</div>
+</footer>
+
+<footer>
+
+© 2026 Crunch Station Restaurant
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
