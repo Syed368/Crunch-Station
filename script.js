@@ -316,7 +316,7 @@ function showMessage(){
 document.querySelector(".call-btn")
 .addEventListener("click",function(){
 
-alert("Calling +03335004065");
+alert("Calling +923353104209");
 
 });
 function orderOnphone() {
@@ -345,3 +345,28 @@ function orderOnphone() {
         "_blank"
     );
 }
+
+document
+.querySelectorAll('nav a')
+.forEach(link => {
+
+    link.addEventListener('click', function(e){
+
+        const targetId =
+        this.getAttribute('href');
+
+        if(targetId.startsWith('#')){
+
+            e.preventDefault();
+
+            document
+            .querySelector(targetId)
+            .scrollIntoView({
+                behavior:'smooth'
+            });
+
+        }
+
+    });
+
+});
