@@ -92,12 +92,12 @@ Our Menu
 <div class="menu-grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxw-w9D8usnTyTLOZFI6PfdmZzKcvCLd9dCg&s">      
 <h3>Zinger Burger</h3>
 <p>500</p>
 
-<button onclick="orderNow('Zinger Burger',5)">
-Order Now
+<button onclick="😋TasteItNow('Zinger Burger',5)">
+😋 Taste It Now
 </button>
 </div>
 
@@ -106,8 +106,8 @@ Order Now
 <h3>Shami Burger</h3>
 <p>120</p>
 
-<button onclick="OrderNow('Shami Burger',8)">
-Order Now
+<button onclick="⭐TryItToday('Shami Burger',8)">
+⭐ Try It Today
 </button>
 </div>
 
@@ -117,8 +117,8 @@ Order Now
 <h3>Royal Crunch Burger</h3>
 <p>500</p>
     
-<button onclick="OrderNOW('Royal Crunch Burger',4)">
-Order Now
+<button onclick="🎉SpecialOrder('Royal Crunch Burger',4)">
+🎉 Special Order
 </button>
 </div>
 
@@ -127,8 +127,8 @@ Order Now
 <h3>Egg Shami Burger</h3>
 <p>150</p>
 
-<button onclick="OrderNOW('Egg Shami Burger',4)">
-Order Now
+<button onclick="😍OrderYourFavorite('Egg Shami Burger',4)">
+😍 Order Your Favorit
 </button>
 </div>
 
@@ -137,8 +137,8 @@ Order Now
 <h3>Double Decker Burger</h3>
 <p>499</p>
 
-<button onclick="OrderNOW(' Double Decker Burger',4)">
-Order Now
+<button onclick="🔥ChooseThisItem(' Double Decker Burger',4)">
+🔥 Choose This Item
 </button>
 </div>
 
@@ -147,8 +147,8 @@ Order Now
 <h3>Chicken Burger</h3>
 <p>200</p>
 
-<button onclick="OrderNOW('Chicken Burger ',4)">
-Order Now
+<button onclick="🍔GetYours('Chicken Burger ',4)">
+🍔 Get Yours
 </button>
 </div>
 <br>
@@ -160,8 +160,8 @@ Order Now
 <p>120</p>
 
 <br>
-<button onclick="OrderNOW(' Small Shawarma',4)">
-Order Now
+<button onclick="😋TasteItNow(' Small Shawarma',4)">
+😋 Taste It Now
 </button>
 </div>
 
@@ -171,8 +171,8 @@ Order Now
 <h3>Large Shawarma</h3>
 <p>199</p>
 
-<button onclick="OrderNOW('Large Shawarma ',4)">
-Order Now
+<button onclick="🍔GetYours('Large Shawarma ',4)">
+🍔 Get Yours
 </button>
 </div>
 
@@ -181,8 +181,8 @@ Order Now
 <h3>Zinger Shawarma</h3>
 <p>250</p>
 
-<button onclick="OrderNOW('Zinger Shawarma ',4)">
-Order Now
+<button onclick="😋TasteItNow('Zinger Shawarma ',4)">
+😋 Taste It Now
 </button>
 </div>
 
@@ -191,8 +191,8 @@ Order Now
 <h3>Loaded Shawarma</h3>
 <p>299</p>
 
-<button onclick="OrderNOW('Loaded Shawarma ',4)">
-Order Now
+<button onclick="😍OrderYourFavorite('Loaded Shawarma ',4)">
+😍 Order Your Favorite
 </button>
 </div>
 
@@ -211,8 +211,8 @@ Order Now
 <h3>Crunch Loaded Roll</h3>
 <p>399</p>
 
-<button onclick="OrderNOW('Crunch Loaded Roll ',4)">
-Order Now
+<button onclick="🚀QuickOrder('Crunch Loaded Roll ',4)">
+🚀Quick Order
 </button>
 </div>
 
@@ -221,8 +221,8 @@ Order Now
 <h3>Shawarma Platter</h3>
 <p>300</p>
 
-<button onclick="OrderNOW( 'Shawarma Platter ',4)">
-Order Now
+<button onclick="❤️IWantThis( 'Shawarma Platter ',4)">
+❤️ I WantT his
 </button>
 </div>
 
@@ -231,6 +231,9 @@ Order Now
 </section>
 
 <!-- Cart -->
+    
+<div id="cartItems"></div>
+
 
 <section id="cart">
 
@@ -240,19 +243,16 @@ Order Now!
 
 <ul id="cartItems"></ul>
 
-<h3>
-Total: $
-<span id="total">
-0
-</span>
-</h3>
 
 <button class="checkout"
 onclick="checkout()">
 Place Order
 </button>
+<br><br>
 
 </section>
+
+
 
 <section id="About">
 
